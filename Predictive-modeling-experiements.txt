@@ -1,0 +1,18 @@
+1. From the features in all the datasets, 'ChallengeId', 'WorkerId', 'Task Type' were not used in building prediction models. 
+These features are for reference purpose only.
+
+2. WinnerOrQuitter attribute is the class variable which contain any of the three values Winner, Quitter, Submitter
+
+3. Traning and test data sets for 30 consecutive days are named in the following format:
+
+crowd-project2-task-test-datasetX
+crowd-project2-task-training-datasetX
+
+Where the value of X can be 0 to 29.  0 means day 0, 1 means day 1 and so on.
+
+This training and test sets are generated with T=90 days.
+
+4. OverAllReliabilityScore, TasCompletionTime(Days), TaskTotalPrize, Tech0:XXX to Tech106:XXX (XXX indicates technology name) are the static features.
+Other features are dynamic features except 'ChallengeId', 'WorkerId', 'Task Type'
+
+
